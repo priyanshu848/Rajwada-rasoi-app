@@ -1,0 +1,119 @@
+.modal {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  min-height: 50vh;
+  z-index: 9999;
+  @media only screen and (min-width: 1025px) {
+    max-width: 935px;
+  }
+  .title {
+    line-height: 1.2;
+    color: rgb(28, 28, 28);
+    margin: 0px;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .body {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 80px;
+    .input {
+      margin-top: 20px;
+      .inputText {
+        padding: 13px 12px;
+        height: 48px;
+        background: rgb(255, 255, 255);
+        border: 1px solid rgb(207, 207, 207);
+        font-size: 18px;
+        width: 100%;
+        outline: none;
+        box-sizing: border-box;
+        border-radius: 6px;
+        color: rgb(28, 28, 28);
+      }
+    }
+    p {
+      font-size: 14px;
+      line-height: 150%;
+      color: rgb(79, 79, 79);
+      text-transform: uppercase;
+      font-weight: 500;
+      margin: 20px 0px 20px;
+    }
+  }
+  .focus {
+    border: unset !important;
+  }
+  .footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(125 125 125 / 20%) 0px 2px 8px;
+    z-index: 10;
+    padding: 10px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    @media only screen and (min-width: 1025px) {
+      max-width: 935px;
+    }
+    .btn {
+      min-width: 15px;
+      min-height: 44px;
+      display: inline-flex;
+      -webkit-box-align: stretch;
+      align-items: stretch;
+      border-radius: 0.6rem;
+      background: transparent;
+      padding: 0px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #93785b;
+      @media only screen and (min-width: 1025px) {
+        font-size: 18px;
+      }
+      .alignItem {
+        display: flex;
+        align-items: center;
+      }
+      .payText {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+        font-size: inherit;
+        transition: transform 0.4s ease 0s;
+        margin-right: 8px;
+        line-height: 1;
+        color: white;
+        .icon {
+          display: flex;
+          -webkit-box-align: center;
+          align-items: center;
+          cursor: inherit;
+        }
+      }
+    }
+    button:disabled {
+      // background-color: -internal-light-dark(rgba(239, 239, 239, 0.3);
+      background-color: #dddddd;
+    }
+  }
+}
+.error {
+  color: #fa0000;
+  font-size: 12px;
+  margin-left: 10px;
+}

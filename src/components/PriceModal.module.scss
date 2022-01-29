@@ -1,0 +1,24 @@
+.modal {
+  width: calc(100% - 26px);
+}
+.box {
+  margin: 10px 12px 12px 10px;
+
+  .title {
+    line-height: 1.5;
+    margin: 0px;
+    font-weight: 600;
+    color: rgb(54, 54, 54);
+    font-size: 18px;
+  }
+  .top {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    h4 {
+      margin-block-start: 10px;
+      margin-block-end: 10px;
+    }
+  }
+}

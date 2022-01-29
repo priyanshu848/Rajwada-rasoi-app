@@ -1,0 +1,58 @@
+$close-button-color: #b4b7bc;
+
+.modal {
+  background: #ffffff;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 700px;
+  border-radius: 6px;
+  position: relative;
+  box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.12), 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+  :global {
+    .ReactModal__Body--open {
+      overflow: hidden;
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.closeButton {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  z-index: 3;
+  border-radius: 50%;
+  cursor: pointer;
+
+  //   svg {
+  //     width: 10px;
+  //     height: 10px;
+
+  //     path {
+  //       fill: $close-button-color;
+  //     }
+  //   }
+
+  &:hover {
+    path {
+      fill: darken($close-button-color, 10%);
+    }
+  }
+}

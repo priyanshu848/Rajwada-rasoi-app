@@ -1,0 +1,127 @@
+.priceBox {
+  padding: 15px;
+  border-bottom: 1px solid rgb(232, 232, 232);
+  background: rgb(254, 252, 249);
+  @media only screen and (min-width: 1025px) {
+    padding: 20px;
+    margin-top: 15px;
+  }
+  .subBox {
+    display: flex;
+    flex-shrink: 0;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    .total {
+      line-height: 1.5;
+      margin: 0px;
+      color: rgb(79, 79, 79);
+      font-weight: 500;
+      font-size: 14px;
+      @media only screen and (min-width: 1025px) {
+        font-size: 18px;
+      }
+    }
+    .subPrice {
+      line-height: 1.5;
+      margin: 0px;
+      color: rgb(79, 79, 79);
+      font-weight: 500;
+      font-size: 14px;
+      @media only screen and (min-width: 1025px) {
+        font-size: 18px;
+      }
+      .price {
+        font-size: 14px;
+        color: rgb(28, 28, 28);
+        @media only screen and (min-width: 1025px) {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .taxBox {
+    display: flex;
+    flex-shrink: 0;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-top: 1rem;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    .taxText {
+      font-size: 14px;
+
+      width: 75%;
+      text-decoration: underline dashed;
+      color: rgb(130, 130, 130);
+      @media only screen and (min-width: 1025px) {
+        font-size: 16px;
+        line-height: 18px;
+      }
+    }
+    .taxPrice {
+      line-height: 1.5;
+      margin: 0px;
+      font-size: 12px;
+      color: rgb(130, 130, 130);
+      white-space: nowrap;
+      @media only screen and (min-width: 1025px) {
+        font-size: 16px;
+      }
+    }
+  }
+  .line {
+    margin-top: 10px;
+    height: 0px;
+    border-width: 0.5px 0px 0px;
+    border-right-style: initial;
+    border-bottom-style: initial;
+    border-left-style: initial;
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    border-image: initial;
+    border-top-style: solid;
+    border-top-color: rgb(232, 232, 232);
+  }
+  .grandTotal {
+    display: flex;
+    flex-shrink: 0;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .grandText {
+      font-size: inherit;
+      line-height: 1.5;
+      margin: 0px;
+      color: rgb(54, 54, 54);
+      font-weight: 500;
+      @media only screen and (min-width: 1025px) {
+        font-size: 18px;
+      }
+    }
+    .grandPrice {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      .priceText {
+        font-size: 14px;
+        color: rgb(28, 28, 28);
+        @media only screen and (min-width: 1025px) {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

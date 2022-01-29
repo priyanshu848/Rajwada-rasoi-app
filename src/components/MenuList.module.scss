@@ -1,0 +1,387 @@
+.menuListBox {
+  @media only screen and (min-width: 1025px) {
+    display: flex;
+    // position: fixed;
+    // top: 120px;
+    // width: 935px;
+    border-top: 2px solid #eceff1;
+  }
+}
+.contain {
+  @media only screen and (min-width: 1025px) {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 300px);
+    border-left: 2px solid #eceff1;
+  }
+}
+.menu {
+  // @media only screen and (min-width: 1025px) {
+  //   height: 100vh;
+  //   overflow: auto;
+  // }
+}
+.list:last-child {
+  margin-bottom: 60px;
+}
+.filterBox {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 14px;
+  padding-top: 10px;
+  align-items: center;
+  position: sticky;
+  top: 109px;
+  z-index: 4;
+  background-color: white;
+  height: 48px;
+  @media only screen and (min-width: 1025px) {
+    top: 115px;
+  }
+}
+.vegSelect {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  .vegBox {
+    position: relative;
+    display: inline-block;
+    width: 38px;
+    height: 26px;
+    appearance: none;
+    outline: none;
+  }
+  .input {
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+  }
+  .vegButton {
+    position: absolute;
+    cursor: pointer;
+    inset: 0px;
+    appearance: none;
+    display: inline-flex;
+    vertical-align: middle;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-top: 0px;
+    margin-left: 0px;
+    background-color: rgb(204, 204, 204);
+    transition: background-color 0.15s ease 0s, opacity 0.15s ease 0s;
+    border-radius: 2.6rem;
+    outline: none;
+    &:before {
+      position: absolute;
+      content: "";
+      height: 22px;
+      width: 22px;
+      left: 2px;
+      background-color: white;
+      margin-top: 0px;
+      margin-left: 0px;
+      outline: none;
+      border-radius: 50%;
+      transition: transform 0.15s ease 0s, opacity 0.15s ease 0s;
+      transform: translateX(0px);
+      border: 0.5px solid rgba(0, 0, 0, 0.04);
+      box-shadow: rgb(28 28 28 / 10%) 0px 0.1rem 0.4rem;
+    }
+  }
+  .selectVegGreen {
+    position: absolute;
+    cursor: pointer;
+    inset: 0px;
+    appearance: none;
+    display: inline-flex;
+    vertical-align: middle;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-top: 0px;
+    margin-left: 0px;
+    background-color: rgb(58, 183, 87);
+    transition: background-color 0.15s ease 0s, opacity 0.15s ease 0s;
+    border-radius: 2.6rem;
+    outline: none;
+    box-shadow: rgb(58 183 87) 0px 0px 0.5em;
+    &::before {
+      position: absolute;
+      content: "";
+      height: 22px;
+      width: 22px;
+      left: -4px;
+      background-color: white;
+      margin-top: 0px;
+      margin-left: 0px;
+      outline: none;
+      border-radius: 50%;
+      transition: transform 0.15s ease 0s, opacity 0.15s ease 0s;
+      transform: translateX(1.1rem);
+      border: 0.5px solid rgba(0, 0, 0, 0.04);
+      box-shadow: rgb(28 28 28 / 10%) 0px 0.2rem 0.4rem;
+    }
+  }
+  .vegText {
+    line-height: 1.2;
+    margin: 0px 0px 0px 1rem;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(54, 54, 54);
+  }
+}
+.circleBox {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  padding: 9px;
+  margin: 0px 0px 0px 12px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border: 1px solid rgb(248, 248, 248);
+  background-color: rgb(255, 255, 255);
+  .iTag {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: inherit;
+  }
+}
+.navList {
+  display: flex;
+  background-color: rgba($color: #eceff1, $alpha: 1);
+  position: sticky;
+  top: 56px;
+  overflow: auto;
+  z-index: 4;
+  height: 54px;
+  @media only screen and (min-width: 1025px) {
+    flex-direction: column;
+    width: 300px;
+    background-color: white;
+    height: 600px;
+    top: 120px;
+  }
+  .navItem {
+    white-space: nowrap;
+    padding: 10px 0;
+    margin: 5px 10px;
+    color: #545454;
+    @media only screen and (min-width: 1025px) {
+      margin: 5px 0px;
+      padding: 10px;
+      font-weight: 800;
+    }
+    &.active {
+      border-bottom: 5px solid #93785b;
+      color: #93785b;
+      @media only screen and (min-width: 1025px) {
+        border-bottom: 0px;
+        border-right: 5px solid #93785b;
+        background-color: rgba($color: #93785b, $alpha: 0.1);
+      }
+    }
+  }
+}
+.navList::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+.list {
+  .headBox {
+    display: flex;
+    align-items: center;
+    padding: 16px 14px;
+    border-bottom: 1px solid #eceff1;
+    background-color: white;
+    position: sticky;
+    top: 150px;
+    z-index: 3;
+    @media only screen and (min-width: 1025px) {
+      top: 150px;
+      overflow: auto;
+    }
+    .heading {
+      font-weight: 700;
+      margin: 0;
+      letter-spacing: 0.3px;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+    .size {
+      background: #545454;
+      color: #fff;
+      min-width: 22px;
+      text-align: center;
+      border-radius: 8px;
+      padding: 1px 0;
+      margin-left: 8px;
+      font-weight: 500;
+      font-size: 0.75em;
+    }
+  }
+}
+.menuList {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 14px;
+  flex-direction: column;
+  background: #fff;
+  .box {
+    width: 100%;
+  }
+  .desc {
+    background: #fff;
+    padding: 16px;
+    &.descBox {
+      padding: 6px 16px;
+      border-bottom: 1px solid #eceff1;
+    }
+  }
+  p {
+    margin: 0;
+    font-size: 14px;
+  }
+  .textContainer {
+    width: 100%;
+    .itemNameContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 45px;
+    }
+  }
+  .bottomContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .btn {
+      padding: 6px 24px;
+      border: 1px solid #dbdbdb;
+      color: #93785b;
+      background: white;
+    }
+  }
+}
+
+.item {
+  display: flex;
+  padding: 10px 0px;
+  width: 100%;
+  .img {
+    width: 40px;
+    height: 40px;
+  }
+  .content {
+    width: 100%;
+    .heading {
+      display: flex;
+      .titleBox {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .descBox {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 18px;
+        color: #999999;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .contentBox {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .rating {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        .votes {
+          margin-left: 5px;
+          font-size: 12px;
+          color: #999999;
+        }
+      }
+      .money {
+        font-size: 16px;
+        margin-top: 5px;
+      }
+
+      .btn {
+        padding: 6px 24px;
+        border: 1px solid #dbdbdb;
+        color: #93785b;
+        background: white;
+      }
+      .qBtn {
+        color: #93785b;
+        border: 1px solid white;
+        margin: 0 auto;
+        font-size: 16px;
+        max-width: 74px;
+        background: transparent;
+        text-align: center;
+        min-height: 30px;
+        line-height: 20px;
+        border-color: #93785b;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        .qBtnBox {
+          font-size: 10px;
+          .minBtn {
+            // padding: 4px 8.97px;
+            min-height: 28px;
+            font-weight: 700;
+            background: transparent;
+            border: none;
+          }
+        }
+        .minusIcon {
+          width: 100%;
+          display: inherit;
+          align-items: inherit;
+          justify-content: inherit;
+          .icon {
+            color: #93785b;
+            font-size: 14px;
+            width: 14px;
+          }
+        }
+        .qText {
+          color: black;
+          font-size: 14px;
+          text-align: center;
+          touch-action: manipulation;
+          padding-bottom: 0px;
+        }
+      }
+    }
+  }
+}
+.notFound {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .imgS {
+    height: 200px;
+  }
+  h1 {
+    color: #93785b;
+  }
+}

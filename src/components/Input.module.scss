@@ -1,0 +1,55 @@
+.menuInputBox {
+  position: relative;
+  width: 100%;
+  .inputBox {
+    position: relative;
+    margin: 0px;
+    height: 48px;
+    .inputContainer {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+      position: absolute;
+      top: 15px;
+      left: 10px;
+      .iInput {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        cursor: inherit;
+      }
+    }
+  }
+  .input {
+    padding: 10px 38px;
+    height: 48px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(207, 207, 207);
+    font-size: 18px;
+    width: 100%;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 6px;
+    color: rgb(28, 28, 28);
+  }
+  .crossBox {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    .cross {
+      cursor: pointer;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin-top: -8px;
+    }
+  }
+}

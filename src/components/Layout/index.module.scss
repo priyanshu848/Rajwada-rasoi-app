@@ -1,0 +1,25 @@
+.img {
+  position: fixed;
+  bottom: 10%;
+  width: 150px;
+  opacity: 0.2;
+  @media only screen and (min-width: 1025px) {
+    bottom: 20%;
+    left: 30%;
+    opacity: 0.2;
+  }
+}
+.header {
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 0px 10px;
+  height: 56px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 8px 6px -6px;
+  z-index: 4;
+  background-color: white;
+}
